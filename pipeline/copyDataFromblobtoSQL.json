@@ -21,7 +21,20 @@
 						"type": "SqlSink",
 						"writeBatchSize": 10000
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"columnMappings": {
+							"orderID": "orderID",
+							"orderDate": "orderDate",
+							"customer": "customer",
+							"billingAddress": "billingAddress",
+							"shippingAddress": "shippingAddress",
+							"units": "units",
+							"amount": "amount",
+							"remarks": "remarks"
+						}
+					}
 				},
 				"inputs": [
 					{
