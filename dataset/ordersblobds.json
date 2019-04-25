@@ -6,6 +6,40 @@
 			"type": "LinkedServiceReference"
 		},
 		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "orderID",
+				"type": "Int32"
+			},
+			{
+				"name": "orderDate",
+				"type": "DateTime"
+			},
+			{
+				"name": "customer",
+				"type": "String"
+			},
+			{
+				"name": "billingAddress",
+				"type": "String"
+			},
+			{
+				"name": "shippingAddress",
+				"type": "String"
+			},
+			{
+				"name": "units",
+				"type": "Int32"
+			},
+			{
+				"name": "amount",
+				"type": "Int32"
+			},
+			{
+				"name": "remarks",
+				"type": "String"
+			}
+		],
 		"typeProperties": {
 			"format": {
 				"type": "TextFormat",
